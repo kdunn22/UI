@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WorthTheWeight Log Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="WorthTheWeight.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="Dashboard.html">WorthTheWeight</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="Dashboard.html">Dashboard</a></li>
+              <li><a href="Log.html">Log</a></li>
+              <li><a href="Weight.html">Weight</a></li>
+              <li><a href="Settings.html">Settings</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> User</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    
+      <div class="col-sm-12">
+        <div class="well">
+          <h4>Dashboard</h4>
+          <p>Welcome Back!</p>
+        </div>
+       
+      
+      
+        
+
+       <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="well">
+            <h4>Food Log</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Meal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Breakfast</td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#Breakfast">Log</button>
+
+                    <!-- Modal -->
+                                  <div class="modal fade" id="Breakfast" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h4 class="modal-title">Breakfast</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="form-group">
+                                            <label for="comment">Entry:</label>
+                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                   </td>
+                </tr>
+                <tr>
+                  <td>Lunch</td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#lunch">Log</button>
+
+  <!-- Modal -->
+                <div class="modal fade" id="lunch" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Lunch Entry</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="comment">Entry:</label>
+                          <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+ 
+                  </td>
+                </tr>
+                <tr>
+                  <td>Dinner</td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#Dinner">Log</button>
+
+  <!-- Modal -->
+                <div class="modal fade" id="Dinner" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Dinner Entry</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="comment">Entry:</label>
+                          <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+ 
+                  </td>
+                </tr>
+                <tr>
+                  <td>Snack</td>
+                  <td>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#Snack">Log</button>
+
+  <!-- Modal -->
+                <div class="modal fade" id="Snack" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Snack Entry</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <label for="comment">Entry:</label>
+                          <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div> 
+            </div>
+       
+          
+          <div class="col-sm-6">
+            <div class="well">
+              <h4>Calorie Budget</h4>
+              <p>DATABASE!!!!!!!!!!!</p>
+            </div>
+          </div>
+     
+
+
+          <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="well">
+                <h4>Macronutrient Log</h4>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Log Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>One </td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#One">Log</button>
+    
+                        <!-- Modal -->
+                                      <div class="modal fade" id="One" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <h4 class="modal-title">Macronutrient Log</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="form-group">
+                                                <label for="comment">Entry:</label>
+                                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                              </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                              <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                       </td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Two</td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#Two">Log</button>
+    
+      <!-- Modal -->
+                    <div class="modal fade" id="Two" role="dialog">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Macronutrient Log</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-group">
+                              <label for="comment">Entry:</label>
+                              <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      </td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+                </div>
+            
+
+
+            <div class="col-sm-3">
+              <div class="well">
+                <h4>Micronutrient Log</h4>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Log Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>One </td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#miOne">Log</button>
+    
+                        <!-- Modal -->
+                                      <div class="modal fade" id="miOne" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <h4 class="modal-title">Micronutrient Entry</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="form-group">
+                                                <label for="comment">Entry:</label>
+                                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                              </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                              <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                       </td>
+                    </tr>
+                    
+                    <tr>
+                      <td>Two</td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#miTwo">Log</button>
+    
+      <!-- Modal -->
+                    <div class="modal fade" id="miTwo" role="dialog">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Micronutrient Entry</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-group">
+                              <label for="comment">Entry:</label>
+                              <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      </td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+                </div>
+       
+             
+
+
+            <div class="col-sm-3">
+              <div class="well">
+                <h4>Water Log</h4>      
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Log Number</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>One</td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#wOne">Log</button>
+    
+                        <!-- Modal -->
+                                      <div class="modal fade" id="wOne" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                              <h4 class="modal-title">Water Entry</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                              <div class="form-group">
+                                                <label for="comment">Entry:</label>
+                                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                              </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                              <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                       </td>
+                    </tr>
+                    <tr>
+                      <td>Two</td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#wTwo">Log</button>
+    
+      <!-- Modal -->
+                    <div class="modal fade" id="wTwo" role="dialog">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Water Entry</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-group">
+                              <label for="comment">Entry:</label>
+                              <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+     
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Three</td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#wThree">Log</button>
+    
+      <!-- Modal -->
+                    <div class="modal fade" id="wThree" role="dialog">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Water Entry</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-group">
+                              <label for="comment">Entry:</label>
+                              <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+     
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Four</td>
+                      <td>
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#wFour">Log</button>
+    
+      <!-- Modal -->
+                    <div class="modal fade" id="wFour" role="dialog">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Water Entry</h4>
+                          </div>
+                          <div class="modal-body">
+                            <div class="form-group">
+                              <label for="comment">Entry:</label>
+                              <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                      </td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+                </div>
+              
+                    
+          
+            <div class="col-sm-3">
+              <div class="well">
+              <h4>Daily Macronutrent Goals</h4>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Log Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>One </td>
+                    <td>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#maOne">Log</button>
+  
+                      <!-- Modal -->
+                                    <div class="modal fade" id="maOne" role="dialog">
+                                      <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Macronutrient Entry</h4>
+                                          </div>
+                                          <div class="modal-body">
+                                            <div class="form-group">
+                                              <label for="comment">Entry:</label>
+                                              <textarea class="form-control" rows="5" id="comment"></textarea>
+                                            </div>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Two</td>
+                    <td>
+                      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#maTwo">Log</button>
+  
+    <!-- Modal -->
+                  <div class="modal fade" id="maTwo" role="dialog">
+                    <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Macronutrient Entry</h4>
+                        </div>
+                        <div class="modal-body">
+                          <div class="form-group">
+                            <label for="comment">Entry:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+              </div>
+           
+         
+
+  
+  </body>
+  </html>
+  

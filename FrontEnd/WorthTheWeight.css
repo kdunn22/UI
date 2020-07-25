@@ -1,0 +1,58 @@
+.row.content {height: 550px}
+    
+
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+    
+
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;} 
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #5D7F2A;
+}
+
+.right {
+  right: 0;
+  background-color: #8CBF3F;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 500px;
+  border-radius: 75%;
+}
+
+.button{
+  position: right;
+  color: lightgray;
+}
+
+
+.well{
+  background-color: #94C973;
+  color:#000000;
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
