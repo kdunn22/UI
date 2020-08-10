@@ -4,10 +4,11 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="WorthTheWeight.css">
+    <script src= "WorthTheWeight.js"></script>
 </head>
 <div class="split left">
     <div class="centered">
-      <img src="Login.jpg" alt="Nutrition">
+      <img src="Login1.jpeg" alt="Nutrition">
       
       <h2>Worth The Weight</h2>
       <p>Every day is another chance to change your life!</p>
@@ -33,10 +34,10 @@
            <div class="col-sm-7-centered">
               <div class="row">
                 <div class="col-sm-6 form-group">
-                  <input class="form-control" id="email" name="email" placeholder="Email" type="Email" required>
+                  <input class="form-control" id="emailCreate" name="email" placeholder="Email" type="Email" required>
                 </div>
                 <div class="col-sm-6 form-group">
-                  <input class="form-control" id="password" name="Password" placeholder="Password" type="text" required>
+                  <input class="form-control" id="passwordCreate" name="Password" placeholder="Password" type="text" required>
                 </div>
               </div>
               <div class="custom-control custom-checkbox mb-3">
@@ -44,7 +45,7 @@
                 <label for="customCheck1" class="custom-control-label">Remember password</label>
             </div>
             
-            <input type=button onClick="location.href='Dashboard.html'" value='Create Account'>
+            <input type=button onclick="createAccount()" value='Create Account'>
         </form>
         <br><a href="Login.html">Already Have an Account? Click Here!</a></br>
     </div>

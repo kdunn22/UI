@@ -11,7 +11,7 @@
   <script src= "WorthTheWeight.js"></script>
   
 </head>
-<body>
+<body onload="getCalBudget()">
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -31,7 +31,7 @@
               <li><a href="Settings.html">Settings</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> User</a></li>
+              <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
             </ul>
           </div>
         </div>
@@ -41,8 +41,8 @@
     
       <div class="col-sm-12">
         <div class="well">
-          <h4>Dashboard</h4>
-          <p>Welcome Back!</p>
+          <h2>Log</h2>
+          <p>Log your data here!</p>
         </div>
        
       
@@ -199,8 +199,8 @@
           
           <div class="col-sm-6">
             <div class="well">
-              <h4>Calorie Budget</h4>
-              <p>DATABASE!!!!!!!!!!!</p>
+              <h4>Calorie Budget to Lose One Pound Per Week</h4>
+              <p id="calBudget">DATABASE!!!!!!!!!!!</p>
             </div>
           </div>
      
