@@ -53,9 +53,10 @@ function logMeal(foodName, foodCal, mealType) {
     var month = d.getMonth() + 1;
     var day = d.getDate();
     var date = + year + '-0' + month + '-0' + day;
+    
 
     //create url string
-    var urlPost = 'http://localhost:3000/api/log?x=' + namePost +'&y=' + calPost + '&z=' + date + '&q=' + mealPost
+    var urlPost = 'http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/log?x=' + namePost +'&y=' + calPost + '&z=' + date + '&q=' + mealPost
 
     fetch(urlPost, {
         
@@ -78,7 +79,7 @@ function logMeal(foodName, foodCal, mealType) {
 
 //function to get/calculate/display calorie budget on the log page
 function getCalBudget(){
-    fetch('http://localhost:3000/api/log/budget')
+    fetch('http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/log/budget')
         .then(
             function(response) {
             if (response.status !== 200) {
@@ -103,7 +104,7 @@ function getCalBudget(){
 
 function getGoalWeight() {
     //get data to populate weight/goal on page load
-    fetch('http://localhost:3000/api/weight')
+    fetch('http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/weight')
         .then(
             function(response) {
             if (response.status !== 200) {
@@ -122,7 +123,7 @@ function getGoalWeight() {
         });
     
     //get data to populate trends on page load
-    fetch('http://localhost:3000/api/weight/trends')
+    fetch('http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/weight/trends')
         .then(
             function(response) {
             if (response.status !== 200) {
@@ -157,7 +158,7 @@ function addGoalWeight(state){
     if (type !=='current'){
         document.getElementById('goalTable').rows[1].cells[0].innerHTML = document.getElementById(type).value;
         goal = document.getElementById(type).value;
-        fetch("http://localhost:3000/api/weight/goal?x=" + goal, {
+        fetch("http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/weight/goal?x=" + goal, {
         
             
             mode: "no-cors",
@@ -187,7 +188,7 @@ function addGoalWeight(state){
         
         document.getElementById('weightTable').rows[1].cells[0].innerHTML = document.getElementById(type).value;
         weight = document.getElementById(type).value;
-        var fetchURL = "http://localhost:3000/api/weight/weight?x=" + weight + "&y=" + date;
+        var fetchURL = "http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/weight/weight?x=" + weight + "&y=" + date;
         fetch(fetchURL, {
             mode: "no-cors",
             method: "POST",
@@ -221,7 +222,7 @@ function validateLogin(){
         alert("Please enter your email address and password.")
     } else {
         //get password from db for entered email
-        fetch('http://localhost:3000/api/login?x=' + email)
+        fetch('http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/login?x=' + email)
         .then(
             function(response) {
             if (response.status !== 200) {
@@ -232,7 +233,8 @@ function validateLogin(){
             response.json().then(function(data){
                 try {
                     if (data.response[0].pass_word == password) {
-                        window.location.href = "dashboard.html";
+                        sessionStorage.setItem("userid", 1);
+                        goToDash();
                     } else  {
                         alert("Incorrect Password! Please try again.");
                         document.getElementById('password').value = "";
@@ -262,7 +264,7 @@ function createAccount() {
     if (fname == "" || lname == "" || email == "" || password == ""){
         alert("Please fill out all fields!")
     } else {
-        var fetchURL = "http://localhost:3000/api/createaccount?x=" + fname + "&y=" + lname + "&z=" + email + "&q=" + password;
+        var fetchURL = "http://ec2-3-93-71-21.compute-1.amazonaws.com:3000/api/createaccount?x=" + fname + "&y=" + lname + "&z=" + email + "&q=" + password;
         console.log(fetchURL);
         fetch(fetchURL, {
 
@@ -276,12 +278,18 @@ function createAccount() {
             .then(response => response.json())
             .then(putData => {
                 console.log('Success:', putData);
+                
             })
             .catch((error) => {
                 console.error('Error:', error);
             });
+            goToDash();
         }
-        window.location.href = "dashboard.html";
+        
+}
+
+function goToDash() {
+    window.location.href = "http://s3.amazonaws.com/worththeweight.com/Dashboard.html";
 }
 
 
